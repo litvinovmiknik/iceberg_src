@@ -1,0 +1,6 @@
+mixin search()
+	.b-search&attributes(attributes)
+		form._form(action="#" method="get")
+			input._input(type="search" placeholder="Поиск по сайту" name="query")
+			button._button(type="submit")
+				svg._icon: use(xlink:href="assets/images/spriteSvg.svg#search")

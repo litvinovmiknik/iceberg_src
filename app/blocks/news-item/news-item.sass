@@ -1,0 +1,36 @@
+@import '../../styles/utils/vars'
+
+.news-item
+	display: flex
+	text-decoration: none
+	margin-top: 40px
+	@media (max-width: 576px)
+		flex-wrap: wrap
+		justify-content: center
+
+	&:first-child
+		margin-top: 0
+	
+	&__img
+		width: 118px
+		align-self: start
+		margin-right: 28px
+
+	&__content
+		@media (max-width: 576px)
+			margin-top: 10px
+
+	&__caption
+		color: $blue
+		font: 600 18px/22px $ssp
+
+	&__text
+		color: $text
+		font: 400 14px/18px $ssp
+		margin-top: 5px
+
+	&:hover &__caption
+		color: $navy
+
+	&:hover .date__day
+		background-color: $navy

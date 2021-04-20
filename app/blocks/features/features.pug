@@ -1,0 +1,24 @@
+mixin features()
+	.b-features&attributes(attributes)
+		.container
+			.row.gy-4
+				.col-md-6.col-xl-3
+					._item
+						svg._icon: use(xlink:href="assets/images/spriteSvg.svg#family")
+						a._title.-bg-1(href="#") Информация для родителей
+						a._link(href="#") подробнее
+				.col-md-6.col-xl-3
+					._item
+						svg._icon: use(xlink:href="assets/images/spriteSvg.svg#calendar")
+						a._title.-bg-2(href="#") Календарь соревнований
+						a._link(href="#") подробнее
+				.col-md-6.col-xl-3
+					._item
+						svg._icon: use(xlink:href="assets/images/spriteSvg.svg#trophy")
+						a._title.-bg-3(href="#") Лучшие спортсмены
+						a._link(href="#") подробнее
+				.col-md-6.col-xl-3
+					._item
+						svg._icon: use(xlink:href="assets/images/spriteSvg.svg#trainer")
+						a._title.-bg-4(href="#") Тренерский состав
+						a._link(href="#") подробнее

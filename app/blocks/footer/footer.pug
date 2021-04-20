@@ -1,0 +1,24 @@
+mixin footer()
+	footer.b-footer&attributes(attributes)
+		.container
+			.row.align-items-center
+				.col-lg-6.col-xl-4.d-flex.flex-column.align-items-center.align-items-xl-start
+					+logo('logo_light')(class="footer__logo")
+					+phone()(class="footer__phone")
+					+address()(class="footer__address")
+				.col-lg-6.col-xl-4.d-flex.justify-content-center.justify-content-xl-end
+					ul._list
+						li._item
+							a._link(href="#") Официальный сайт РАА «РУСАДА»
+						li._item
+							a._link(href="#") Образовательный антидопинговый онлайн-ресурс
+						li._item
+							a._link(href="#") Официальный сервис по проверке препаратов
+						li._item
+							a._link(href="#") Система ADAMS
+						li._item
+							a._link(href="#") Информация о дисквалификации
+				.col-lg-12.col-xl-4.d-flex.flex-column.align-items-center.align-items-xl-end
+					+social()(class="footer__social")
+					img._counter(src="assets/images/counter.png" alt="")
+					+created()

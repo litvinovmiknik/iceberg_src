@@ -1,0 +1,124 @@
+@import '../../styles/utils/vars'
+	
+.banner-slider
+	max-width: 1920px
+	margin: 0 auto
+	display: block
+	position: relative
+
+	&__item
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		width: 100%
+		height: 795px
+		@media (max-width: 1400px)
+			height: 600px
+		@media (max-width: 1200px)
+			height: 500px
+		@media (max-width: 992px)
+			height: 400px
+		@media (max-width: 768px)
+			height: 300px
+
+	&__title
+		color: #fff
+		font: italic 600 130px $ssp
+		text-transform: uppercase
+		max-width: 1320px
+		margin: 25px auto 0
+		padding: 0 60px
+		@media (max-width: 1400px)
+			font-size: 110px
+			text-align: center
+			padding: 0
+		@media (max-width: 1200px)
+			font-size: 90px
+		@media (max-width: 992px)
+			font-size: 70px
+		@media (max-width: 768px)
+			font-size: 50px
+		@media (max-width: 576px)
+			font-size: 30px
+
+	
+	.bx-wrapper
+		margin-bottom: 0
+		background: transparent
+		border: none
+		box-shadow: none
+
+	.bx-pager
+		text-align: center
+		bottom: 43px
+		@media (max-width: 576px)
+			bottom: 20px
+
+	.bx-pager-link
+		width: 19px!important
+		height: 19px!important
+		border-radius: 10px!important
+		background: #fff!important
+		margin: 0 8px!important
+
+	.bx-pager-link.active
+		background: $blue!important
+
+	.bx-controls-direction
+		width: 100%
+		height: 72px
+		max-width: 1320px
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		margin: auto
+		@media (max-width: 1400px)
+			max-width: 1140px
+		@media (max-width: 1200px)
+			max-width: 960px
+		@media (max-width: 992px)
+			max-width: 720px
+		@media (max-width: 768px)
+			max-width: 540px
+		@media (max-width: 576px)
+			max-width: 100%
+
+	.bx-prev
+		width: 42px!important
+		height: 72px!important
+		margin-top: 0!important
+		top: 0!important
+		left: 0!important
+		mask-image: url(../images/spriteSvg.svg#prev-1)
+		mask-position: center
+		mask-repeat: no-repeat
+		mask-size: cover
+		background: none
+		background-color: #A2D9F7
+		@media (max-width: 576px)
+			left: 10px!important
+
+		&:hover, &:active, &:focus
+			mask-position: center
+			background-color: $navy
+
+	.bx-next
+		width: 42px!important
+		height: 72px!important
+		margin-top: 0!important
+		top: 0!important
+		right: 0!important
+		mask-image: url(../images/spriteSvg.svg#next-1)
+		mask-position: center
+		mask-repeat: no-repeat
+		mask-size: cover
+		background: none
+		background-color: #A2D9F7
+		@media (max-width: 576px)
+			right: 10px!important
+
+		&:hover, &:active, &:focus
+			mask-position: center
+			background-color: $navy

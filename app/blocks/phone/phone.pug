@@ -1,0 +1,20 @@
+mixin phone($blockname)
+	.b-phone&attributes(attributes)
+		if $blockname == 'contacts'
+			svg._icon.-start: use(xlink:href="assets/images/spriteSvg.svg#phone")
+			._col
+				._label Телефон:
+				._item
+					a._link(href="tel:+74912505016") +7 (4912) 50-50-16
+					span._text-2 - Приемная
+				._item
+					a._link(href="tel:+74912505016") +7 (4912) 50-50-16
+					span._text-1.-ml (доб. 1003)
+					span._text-2 - Администратор
+		else
+			svg._icon: use(xlink:href="assets/images/spriteSvg.svg#phone")
+			._col
+				a._link(href="tel:+74912505016") +7 (4912) 50-50-16
+				._info
+					span._text-1 (доб. 1003)
+					span._text-2 - Администратор

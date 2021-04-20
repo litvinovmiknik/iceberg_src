@@ -1,0 +1,26 @@
+@import '../../styles/utils/vars'
+
+.date
+	width: 63px
+	display: block
+	margin-right: 38px
+	
+	&__day
+		width: 63px
+		height: 50px
+		background-color: $blue
+		mask-image: url(../images/spriteSvg.svg#day)
+		mask-repeat: no-repeat
+		mask-size: cover
+		mask-position: center
+		color: #fff
+		font: 900 italic 30px $ssp
+		display: flex
+		align-items: center
+		justify-content: center
+
+	&__month
+		color: $gray
+		font: 400 italic 14px $ssp
+		text-align: center
+		margin-top: 2px

@@ -1,0 +1,32 @@
+mixin header()
+	header.b-header&attributes(attributes)
+		img._left-shards(src="assets/images/ice-shard_left.png" alt="")
+		img._right-shards(src="assets/images/ice-shard_right.png" alt="")
+		._top
+			.container.py-3
+				.row.align-items-center.gy-3
+					.col-sm-12.col-md-6.col-xl-3
+						+search()(class="header__search")
+					.col-sm-12.col-md-6.col-xl-3
+						+phone()(class="header__phone")
+					.col-sm-12.col-md-6.col-xl-3
+						+address()(class="header__address")
+					.col-sm-12.col-md-6.col-xl-3.d-flex.justify-content-center.justify-content-xxl-end
+						+social()
+						+buy-ticket()(class="header__buy-ticket")
+						+watch()(class="header__watch")
+		._middle
+			.container.py-4
+				.row.align-items-baseline.gy-3
+					.col-12.col-xl-4
+						+sport-school()(class="header__sport-school")
+					.col-12.col-xl-4
+						+logo('logo')(class="header__logo")
+					.col-12.col-xl-4
+						+ice-arena()(class="header__ice-arena")
+		._bottom
+			.container
+				.row
+					.col-12
+						+nav()
+		

@@ -1,0 +1,87 @@
+@import '../../styles/utils/vars'
+
+.trainers
+	display: block
+	
+	&__section
+		margin-bottom: 50px
+
+	&__title
+		color: #000
+		font: italic 600 48px $ssp
+		display: flex
+		align-items: center
+		@media (max-width: 576px)
+			font-size: 30px
+
+	&__icon
+		width: 47px
+		height: 51px
+		margin-right: 15px
+		fill: #000
+		@media (max-width: 576px)
+			margin-right: 5px
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		grid-gap: 35px
+		margin-top: 30px
+
+	&__item
+		width: 259px
+		height: 364px
+		position: relative
+		background-repeat: no-repeat
+		background-position: top center
+		background-size: contain
+		border: 2px solid #000
+		display: flex
+		text-decoration: none
+
+	&__info
+		width: 100%
+		min-height: 112px
+		background-color: #F9F9F9
+		align-self: flex-end
+		text-align: center
+		padding: 10px 0
+		box-sizing: border-box
+
+	&__name
+		color: #000
+		font: 600 20px $ssp
+
+	&__desc
+		color: #000
+		font: 600 20px $ssp
+
+	&__option
+		color: #000
+		font: 600 16px $ssp
+		margin-top: 8px
+
+	&__section--blue &__title
+		color: $blue
+
+	&__section--blue &__icon
+		fill: $blue
+
+	&__section--blue &__item
+		border: 2px solid $blue
+
+	&__section--blue &__option
+		color: $blue
+
+	&__section--purple &__title
+		color: $purple
+
+	&__section--purple &__icon
+		fill: $purple
+
+	&__section--purple &__item
+		border: 2px solid $purple
+
+	&__section--purple &__option
+		color: $purple

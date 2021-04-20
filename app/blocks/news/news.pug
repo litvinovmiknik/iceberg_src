@@ -1,0 +1,14 @@
+mixin news()
+	.b-news&attributes(attributes)
+		.container
+			.row
+				.col-xl-9.d-flex.flex-column.align-items-center.align-items-xl-start
+					h2._title Новости
+					hr._hr
+					._list
+						+news-item()
+						+news-item()
+						+news-item()
+					a._all(href="#") Все новости
+				.col-xl-3.d-flex.justify-content-center.justify-content-xxl-end
+					+previews()(class="news__previews")

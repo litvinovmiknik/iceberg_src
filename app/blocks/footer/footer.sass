@@ -1,0 +1,90 @@
+@import '../../styles/utils/vars'
+	
+.footer
+	width: 100%
+	max-width: 1920px
+	margin: auto auto 0
+	display: block
+	background: $blue
+	padding: 40px 0
+
+	&__logo
+		max-width: 335px
+		width: 100%
+
+	&__phone
+		margin-top: 10px
+
+		.phone__link
+			color: #fff
+			font: 600 16px $ssp
+
+		.phone__link:hover
+			color: #fff
+
+		.phone__col
+			display: flex
+			margin-left: 10px
+			@media (max-width: 350px)
+				flex-direction: column
+
+		.phone__info
+			margin-left: 5px
+			@media (max-width: 350px)
+				margin-left: 0
+
+		.phone__text-1, .phone__text-2
+			color: #fff
+			font: 400 12px $ssp
+
+		.phone__icon
+			width: 16px
+			height: 16px
+			fill: #fff
+
+	&__address
+		margin-top: 3px
+		margin-left: 2px
+
+		.address__icon
+			width: 15px
+			height: 15px
+			fill: #fff
+
+		.address__text
+			color: #fff
+			font: 400 16px $ssp
+			margin-left: 10px
+
+	&__list
+		list-style-type: disc
+		color: #fff
+		@media (max-width: 1200px)
+			margin: 40px 0
+		@media (max-width: 400px)
+			margin-left: 30px
+
+	&__item
+		margin-bottom: 10px
+
+		&:last-child
+			margin-bottom: 0
+
+	&__link
+		color: #fff
+		font: 400 14px $ssp
+
+		&:hover
+			color: #50B2E1
+
+	&__social
+
+		.social__icon
+			fill: #fff
+
+		.social__icon:hover
+			fill: #fff
+
+	&__counter
+		width: 88px
+		margin: 40px 0 36px

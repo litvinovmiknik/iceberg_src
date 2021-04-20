@@ -1,0 +1,14 @@
+mixin partners()
+	.b-partners&attributes(attributes)
+		.container
+			.row
+				.col-xl-9.d-flex.flex-column.align-items-center.align-items-xl-start
+					h3._title Наши партнеры
+					._slider
+						img._img(src="assets/images/partners/1.png" alt="")
+						img._img(src="assets/images/partners/2.png" alt="")
+						img._img(src="assets/images/partners/3.png" alt="")
+						img._img(src="assets/images/partners/4.png" alt="")
+						img._img(src="assets/images/partners/5.png" alt="")
+				.col-xl-3.d-flex.justify-content-center.justify-content-xl-end
+					+useful-links()(class="partners__useful-links")

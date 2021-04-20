@@ -1,0 +1,12 @@
+mixin question-form()
+	.b-question-form&attributes(attributes)
+		._caption Задать свой вопрос
+		form._form(action="#" method="post")
+			input._input(type="text" name="name" placeholder="Ваше имя")
+			input._input(type="email" name="email" placeholder="E-mail")
+			input._input(type="text" name="phone" placeholder="Телефон")
+			textarea._textarea(name="message" placeholder="Ваш вопрос")
+			label._label
+				input._checkbox(type="checkbox" name="agree")
+				|Даю согласие на обработку персональных данных
+			button._button(type="submit") Отправить

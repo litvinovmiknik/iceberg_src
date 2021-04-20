@@ -1,0 +1,28 @@
+extends layouts/default
+block title
+    title Айсберг
+block link
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,900&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="assets/styles/libs/bootstrap.min.css")
+    link(rel="stylesheet" href="assets/styles/libs/jquery.bxslider.min.css")
+    link(rel="stylesheet" href="assets/styles/libs/slicknav.min.css")
+    link(rel="stylesheet" href="assets/styles/index.min.css")
+block body
+    .b-page
+        +header()
+        main.b-main
+            .container
+                .row
+                    .col-12
+                        +breadcrumbs(['Главная', 'Анонсы'])
+                        h1._title Анонсы
+                        +previews-list()
+                        +pagination()
+        +footer()
+block script
+    script(src="assets/scripts/libs/jquery-3.5.1.min.js")
+    script(src="assets/scripts/libs/bootstrap.min.js")
+    script(src="assets/scripts/libs/jquery.bxslider.min.js")
+    script(src="assets/scripts/libs/jquery.slicknav.min.js")
+    script(src="assets/scripts/index.min.js")

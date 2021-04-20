@@ -1,0 +1,9 @@
+mixin contacts()
+	.b-contacts&attributes(attributes)
+		._row
+			._col
+				+address('contacts')(class="contacts__address")
+				+phone('contacts')(class="contacts__phone")
+				._label Мы в социальных сетях:
+				+social()(class="contacts__social")
+			+question-form()(class="contacts__question-form")

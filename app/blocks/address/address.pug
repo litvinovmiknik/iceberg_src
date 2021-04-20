@@ -1,0 +1,10 @@
+mixin address($blockname)
+	.b-address&attributes(attributes)
+		if $blockname == 'contacts'
+			svg._icon: use(xlink:href="assets/images/spriteSvg.svg#address")
+			._col
+				._label Адрес:
+				._text Рязань, ул. Шевченко, 51
+		else
+			svg._icon: use(xlink:href="assets/images/spriteSvg.svg#address")
+			._text Рязань, ул. Шевченко, 51

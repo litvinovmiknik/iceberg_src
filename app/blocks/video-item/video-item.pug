@@ -1,0 +1,5 @@
+mixin video-item($poster)
+	.b-video-item&attributes(attributes)
+		video._video(poster=$poster)
+			source(src="video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+		svg._play: use(xlink:href="assets/images/spriteSvg.svg#play")

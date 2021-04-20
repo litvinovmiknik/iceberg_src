@@ -1,0 +1,32 @@
+@import '../../styles/utils/vars'
+
+.contacts
+	display: block
+	padding-bottom: 70px
+
+	&__row
+		display: flex
+		justify-content: space-between
+		@media (max-width: 992px)
+			flex-direction: column
+
+	&__question-form
+		@media (max-width: 992px)
+			margin-top: 40px
+	
+	&__label
+		color: $gray
+		font: 600 14px $ssp
+		margin: 0 0 8px 40px
+
+	&__address
+		margin-bottom: 40px
+
+	&__phone
+		margin-bottom: 40px
+
+	&__social
+		margin-left: 40px
+
+	input[type="email"]
+		display: none

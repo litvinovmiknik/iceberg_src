@@ -1,0 +1,73 @@
+@import '../../styles/utils/vars'
+	
+.features
+	max-width: 1920px
+	margin: 0 auto
+	display: block
+	background-image: url(../images/bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 80px 0
+	@media (max-width: 1200px)
+		background-size: contain
+		background-repeat: repeat
+		padding: 40px 0
+
+	&__item
+		width: 269px
+		height: 273px
+		margin: 0 auto
+		background-color: #fff
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+
+	&__icon
+		width: 70px
+		height: 70px
+
+	&__title
+		color: $blue
+		font: 600 18px $ssp
+		text-align: center
+		text-decoration: none
+		margin-top: 10px
+		width: 100%
+		padding: 0 60px
+		box-sizing: border-box
+		min-height: 81px
+		background-repeat: no-repeat
+		background-position: center
+		display: flex
+		align-items: center
+		background-color: #CCE8F4
+		mask-repeat: no-repeat
+		mask-position: center
+		mask-size: cover
+
+		&:hover
+			color: #fff
+			text-decoration: none
+			background-color: $navy
+
+		&--bg-1
+			mask-image: url(../images/spriteSvg.svg#feature-bg-1)
+
+		&--bg-2
+			mask-image: url(../images/spriteSvg.svg#feature-bg-2)
+
+		&--bg-3
+			mask-image: url(../images/spriteSvg.svg#feature-bg-3)
+
+		&--bg-4
+			mask-image: url(../images/spriteSvg.svg#feature-bg-4)
+
+	&__link
+		color: $gray
+		font: 400 14px $ssp
+		text-decoration: none
+
+		&:hover
+			color: $gray
